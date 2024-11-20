@@ -11,7 +11,7 @@ jobs:
       - name: Push changes
         run: |
           git config --global user.name "TomGoureau"
-          git config --global user.email "tom.goureau@etu.univ-lehavre.fr"
+          git config --global user.email "tom.goureau@gmail.com"
           git add Q1_archive_README.md
           git commit -m "Add Q1_archive_README.md"
           git push
