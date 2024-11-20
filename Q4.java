@@ -7,7 +7,7 @@ public class Q4
 		while (cpt < Integer.parseInt(arg[0]) )
 		{
 			s+= '*';
-		  System.out.println( s );
+		  	System.out.println( s );
 			cpt++ ;
 		}
 		
