@@ -13,8 +13,8 @@ jobs:
           cat README.md >> Q2_archive_README.md
       - name: Push changes
         run: |
-          git config --global user.name "Tom"
-          git config --global user.email "tom.goureau@etu.univ-lehavre.fr"
+          git config --global user.name "TomGoureau"
+          git config --global user.email "tom.goureau@gmail.com"
           git add Q2_archive_README.md
           git commit -m "Add Q2_archive_README.md"
           git push
