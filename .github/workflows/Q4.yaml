@@ -6,9 +6,9 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-      - name: Create Q3_archive_java.txt
+      - name: Create Q4_archive_java.txt
         run: |
-          echo "GOUREAU Tom"+'%d-%m-%Y' > Q3_archive_java.txt
+          echo "GOUREAU Tom"+'%d-%m-%Y' > Q4_archive_java.txt
           cat Q4.java >> Q4_archive_java.txt
       - name: Push changes
         run: |
