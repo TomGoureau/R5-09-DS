@@ -1,4 +1,4 @@
-GOUREAU Tom+%d-%m-%Y
+date +%d-%m-%Y
 public class Q4
 {
 	public static void main(String[] arg)
