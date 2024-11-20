@@ -1,0 +1,20 @@
+name: Q5 Workflow
+on: [push]
+jobs:
+  create-archive:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Create Q5_archive_java.txt
+        run: |
+          echo "GOUREAU Tom" > Q5_archive_java.txt
+          echo date +'%d-%m-%Y' > Q5_archive_java.txt
+          cat Q5.java >> Q5_archive_java.txt
+      - name: Push changes
+        run: |
+          git config --global user.name "TomGoureau"
+          git config --global user.email "tom.goureau@gmail.com"
+          git add Q5_archive_java.txt
+          git commit -m "Add Q5_archive_java.txt"
+          git push
