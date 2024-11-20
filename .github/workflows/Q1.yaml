@@ -12,7 +12,6 @@ jobs:
         run: |
           git config --global user.name "TomGoureau"
           git config --global user.email "tom.goureau@gmail.com"
-          cp README.md Q1_archive_README.md
           git add Q1_archive_README.md
           git commit -m "Add Q1_archive_README.md"
           git push
