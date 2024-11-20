@@ -1,0 +1,19 @@
+name: Q3 Workflow
+on: [push]
+jobs:
+  create-archive:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Create Q3_archive_README.md
+        run: |
+          echo "GOUREAU Tom" > Q2_archive_README.mdd
+          cat Q3.java >> Q2_archive_README.md
+      - name: Push changes
+        run: |
+          git config --global user.name "Tom GOUREAU"
+          git config --global user.email "tom.goureau@etu.univ-lehavre.fr"
+          git add Q2_archive_README.md
+          git commit -m "Add Q2_archive_README.md"
+          git push
